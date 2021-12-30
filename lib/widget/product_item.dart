@@ -49,19 +49,22 @@ class ProductItem extends StatelessWidget {
           const SizedBox(
             height: Dimens.smallPadding,
           ),
-          Text(
-            product?.name ?? '',
-            maxLines: 2,
-            overflow: TextOverflow.ellipsis,
-            style: const TextStyle(
-                fontSize: Dimens.homeTitleFont, fontWeight: FontWeight.w700),
+          Expanded(
+            child: Text(
+              product?.name ?? '',
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
+              style: const TextStyle(
+                  fontSize: Dimens.homeTitleFont, fontWeight: FontWeight.w700),
+            ),
           ),
           const SizedBox(
             height: Dimens.tinyPadding,
           ),
           Text(
             '${S.current.createAt} ${shortcutDate(product?.updatedAt ?? '0')}',
-            style: const TextStyle(fontSize: Dimens.seeAllFont),
+            style: const TextStyle(
+                fontSize: Dimens.seeAllFont, color: Colors.teal),
           )
         ],
       ),

@@ -31,6 +31,7 @@ abstract class _AppStore with Store {
   @observable
   bool isShowLoadingDropped = false;
 
+  // parse json file on Splash screen, and keep data for other screen
   @action
   Future<void> parseJsonFile() async {
     var jsonFile = await rootBundle.loadString('lib/res/file/catalog.json');

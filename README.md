@@ -70,3 +70,6 @@ Android Studio/IntelliJ: https://plugins.jetbrains.com/plugin/13666-flutter-intl
 ```
 flutter pub global run intl_utils:generate
 ```
+
+### 6. Known issue
+- All list data in app don't use load more, because all data get once from json file.

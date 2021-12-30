@@ -99,6 +99,86 @@ class S {
       args: [],
     );
   }
+
+  /// `There is no product`
+  String get emptyProduct {
+    return Intl.message(
+      'There is no product',
+      name: 'emptyProduct',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Create at`
+  String get createAt {
+    return Intl.message(
+      'Create at',
+      name: 'createAt',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Guaranteed Authentic`
+  String get guaranteed {
+    return Intl.message(
+      'Guaranteed Authentic',
+      name: 'guaranteed',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Status`
+  String get status {
+    return Intl.message(
+      'Status',
+      name: 'status',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Release date`
+  String get releaseDate {
+    return Intl.message(
+      'Release date',
+      name: 'releaseDate',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Rank`
+  String get rank {
+    return Intl.message(
+      'Rank',
+      name: 'rank',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Product details`
+  String get productDetails {
+    return Intl.message(
+      'Product details',
+      name: 'productDetails',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Similar product`
+  String get similarProducts {
+    return Intl.message(
+      'Similar product',
+      name: 'similarProducts',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

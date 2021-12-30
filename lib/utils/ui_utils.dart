@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:get/get.dart';
+import 'package:intl/intl.dart';
 
 void onWidgetBuildDone(Function function) {
   SchedulerBinding.instance!.addPostFrameCallback((_) {
@@ -22,11 +23,11 @@ void hideKeyboard(BuildContext context) {
 
 Future navigateTo(Widget screen,
     {Transition? transition,
-      bool clearStack = false,
-      bool offCurrentScreen = false,
-      bool preventDuplicates = false,
-      Duration? duration,
-      bool popGesture = true}) async {
+    bool clearStack = false,
+    bool offCurrentScreen = false,
+    bool preventDuplicates = false,
+    Duration? duration,
+    bool popGesture = true}) async {
   final t = transition ?? Transition.rightToLeftWithFade;
   final d = duration ?? const Duration(milliseconds: 250);
   if (clearStack) {
@@ -43,5 +44,14 @@ Future navigateTo(Widget screen,
         duration: d,
         preventDuplicates: preventDuplicates,
         popGesture: popGesture);
+  }
+}
+
+String shortcutDate(String dateTimeString) {
+  try {
+    final DateTime dateTime = DateTime.parse(dateTimeString);
+    return DateFormat('yyyy-MM-dd').format(dateTime);
+  } catch (e) {
+    return dateTimeString;
   }
 }

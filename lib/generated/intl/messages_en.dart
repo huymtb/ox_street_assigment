@@ -24,8 +24,20 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "allList": MessageLookupByLibrary.simpleMessage("All listings"),
         "appName": MessageLookupByLibrary.simpleMessage("Ox Street"),
+        "createAt": MessageLookupByLibrary.simpleMessage("Create at"),
         "dropped": MessageLookupByLibrary.simpleMessage("Just dropped"),
+        "emptyProduct":
+            MessageLookupByLibrary.simpleMessage("There is no product"),
+        "guaranteed":
+            MessageLookupByLibrary.simpleMessage("Guaranteed Authentic"),
+        "productDetails":
+            MessageLookupByLibrary.simpleMessage("Product details"),
+        "rank": MessageLookupByLibrary.simpleMessage("Rank"),
         "rankList": MessageLookupByLibrary.simpleMessage("Ranking listings"),
-        "seeAll": MessageLookupByLibrary.simpleMessage("See all")
+        "releaseDate": MessageLookupByLibrary.simpleMessage("Release date"),
+        "seeAll": MessageLookupByLibrary.simpleMessage("See all"),
+        "similarProducts":
+            MessageLookupByLibrary.simpleMessage("Similar product"),
+        "status": MessageLookupByLibrary.simpleMessage("Status")
       };
 }

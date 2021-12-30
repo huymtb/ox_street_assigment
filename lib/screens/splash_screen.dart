@@ -21,7 +21,7 @@ class _SplashScreenState extends State<SplashScreen> {
     _appStore = context.read<AppStore>();
     _appStore.parseJsonFile().then((value) {
       Future.delayed(const Duration(milliseconds: 2000), () {
-        navigateTo(const HomeScreen());
+        navigateTo(const HomeScreen(), clearStack: true);
       });
     });
   }

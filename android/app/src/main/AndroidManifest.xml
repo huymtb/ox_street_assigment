@@ -1,6 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ox_street.ox_street_assigment">
-   <application
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
         android:label="ox_street_assigment"
         android:icon="@mipmap/ic_launcher">
         <activity

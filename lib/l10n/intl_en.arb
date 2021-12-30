@@ -4,5 +4,13 @@
   "allList": "All listings",
   "rankList": "Ranking listings",
   "dropped": "Just dropped",
-  "seeAll": "See all"
+  "seeAll": "See all",
+  "emptyProduct": "There is no product",
+  "createAt": "Create at",
+  "guaranteed": "Guaranteed Authentic",
+  "status": "Status",
+  "releaseDate": "Release date",
+  "rank": "Rank",
+  "productDetails": "Product details",
+  "similarProducts": "Similar product"
 }
